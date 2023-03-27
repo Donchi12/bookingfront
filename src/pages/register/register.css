@@ -1,0 +1,131 @@
+
+
+.register {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .lContainer {
+     width: 100%;
+     max-width: 500px;
+     margin: 0 auto;
+     padding: 15px 10px;
+     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+  .lWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  .register-title{
+    margin: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .lInput{
+    height: 55px;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #febb02;
+    border-radius: 10px;
+  }
+  .lContainer .lWrapper label{
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #0071c2;
+  
+  }
+  
+  
+  .input-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    
+  }
+  .input-wrapper.check a{
+   
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #0071c2;
+  }
+  .input-wrapper.check a:hover{
+    opacity: .8;
+    transition: all .5 ease-in-out;
+  }
+  
+  .lButton {
+    border: none;
+    padding: 20px 20px;
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+    width: 100%;
+  }
+  
+  .lButton:disabled{
+    background-color: #0071c28c;
+    cursor: not-allowed;
+  }
+  .or{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .or b{
+   margin: 0 10px;
+  }
+  .or span {
+    flex: 1;
+  }
+  
+  .facebookBtn{
+    
+      background-color: white;
+      width: 100%;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top:  10px;
+      border: 1px solid #dadce0;
+      color: #3c4043;
+      position: relative;
+    
+  }
+  
+  .facebookBtn::before{
+    content: url("../../img/facebook-2870.svg");
+    position: absolute;
+    width: 20px;
+    display: block;
+    height: 20px;
+    left: 10px;
+    text-align: center;
+    background:  no-repeat;
+    
+  }
+  .register-footer p{
+    text-align: right;
+    padding: 10px 0;
+    color: #0071c2;
+  }
+  
+  .register-footer p a{
+     margin-left: 5px;
+     display: inline-block;
+     text-transform: uppercase;
+  }
+  

@@ -1,0 +1,137 @@
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  overflow-x:hidden ;
+}
+
+.listWrapper {
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  gap: 20px;
+}
+
+.listSearch {
+  flex: 1;
+  background-color: rgb(254, 187, 2);
+  padding: 10px;
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+  height: max-content;
+}
+
+.lsTitle{
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.lsItem{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.lsItem>label{
+  font-size: 16px;
+}
+
+.lsItem>input{
+  height: 40px;
+  border: none;
+  padding: 5px;
+}
+
+
+.lsItem>span{
+  height: 40px;
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.destination:hover{
+  border: #0071c2;
+}
+.destination{
+  width: 100%;
+  height: inherit;
+  border: none;
+  outline: none;
+}
+.destination::placeholder{
+  font-weight: 500;
+  font-size: 17px;
+  color: #3d3a3a;
+}
+.searchIcon{
+  position: absolute;
+  top: 100px;
+}
+
+.myDateRange{
+  position: absolute;
+  top: 190px;
+}
+.lsItem>span .checkDate{
+  font-weight: 500;
+}
+
+
+.lsOptions{
+  padding: 10px 0;
+}
+
+.lsOptionItem{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #181717;
+  font-size: 14px;
+}
+
+.lsOptionInput{
+  width: 60px;
+  padding-left: 3px;
+}
+.lsOptionInput::placeholder{
+  font-size: 16px;
+  color: #070707;
+  font-weight: 400;
+}
+
+.listSearch>button{
+  padding: 10px;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.listResult {
+  flex: 3;
+}
+
+
+@media (max-width: 768px) {
+
+
+  .listWrapper{
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .listContainer{
+    overflow-x: hidden;
+  }
+  
+
+}

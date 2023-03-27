@@ -1,0 +1,183 @@
+.navbar{
+  height: 70px;
+  background-color: #003580;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navContainer{
+  width: 100%;
+  max-width: 1240px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.userInfoCont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo{
+  width: 120px;
+
+}
+
+.navbarImage{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navButton{
+  margin-left: 20px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #003580;
+  font-size: 17px;
+  font-weight: 600;
+  border: 1px solid #003580;
+  background-color: white;
+  text-decoration: none;
+ 
+}
+
+.navbardropdown{
+  position: absolute;
+  padding: 1rem 0;
+  background-color: white;
+  border-radius: 5px;
+  top: 50px;
+  z-index: 100;
+  opacity: 0;
+  box-shadow: -1px 3px 3px #0c1727 ;
+}
+.navbardropdown.active{
+  opacity: 1;
+  animation: drop .5s ease-in-out ;
+}
+
+@keyframes drop {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+.dropdownwrapper{
+  width: 150px;
+  padding: 0 .7rem;
+}
+.dropdownBtn{
+  width: 100%;
+  cursor: pointer;
+  padding: 5px 0;
+  border: 1px solid #003580 ;
+  text-transform: uppercase;
+}
+
+.navModal{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.418);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.nContainer{
+  background-color: white;
+  padding: 20px;
+  position: relative;
+}
+.nClose{
+  
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    cursor: pointer;
+    border: 1px solid rgb(86, 18, 18);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 20px;
+    border-radius: 4px;
+    
+  }
+
+.nClose:hover{
+  border: 1px solid rgb(235, 36, 36);
+  transition: all .5px ease-in-out;
+}
+.hotelSelect{
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 5px;
+  border-radius: 6px;
+  border: 1px solid #0071c2;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.nButton{
+  border: none;
+  padding: 10px 20px;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+
+ 
+  .navContainer{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .navButton{
+    margin-left: 15px;
+    padding: 10px 10px;
+    font-size: 15px;
+   
+  }
+
+
+}
+@media (max-width: 480px) {
+
+ 
+  .navContainer{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .logo{
+    width: 90px;
+  }
+  .navButton{
+    margin-left: 3px;
+    padding: 4px ;
+  
+   
+  }
+
+
+}

@@ -1,0 +1,130 @@
+.payment {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.418);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .pContainer {
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    width: 60%;
+  }
+  
+  .pClose {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    border: 1px solid rgb(86, 18, 18);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 23px;
+    height: 20px;
+    border-radius: 4px;
+    
+  }
+  .pClose:hover{
+    border: 1px solid rgb(235, 36, 36);
+    transition: all .5px ease-in-out;
+  }
+  .itemContainer{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .pItem {
+    display: flex;
+    flex-basis: 25%;
+    align-items: center; 
+    gap: 50px;
+    padding: 15px 0px ;
+    width: 100%;
+  }
+  
+  .pInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .pTitle {
+    font-weight: 500;
+  }
+  
+ 
+  
+  .pMax {
+    font-size: 12px;
+  }
+  
+  .pPrice {
+    font-weight: 500;
+  }
+  
+  
+  .room{
+    display: flex;
+    flex-direction: column;
+  }
+  .hr{
+    margin: 10px 0;
+    display: block;
+  }
+  .pForm{
+    width: 100%;
+  }
+  .sumContainer{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .sumItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  .sumItem:last-of-type{
+    margin-top: 10px;
+  
+  }
+  .stripeError{
+    color: rgb(245, 37, 37);
+  }
+  
+  .pButton {
+    border: none;
+    padding: 10px 20px;
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%; 
+    margin-top: 20px;
+  }
+  
+
+  @media (max-width: 780px) {
+     .pItem{
+        flex-basis: 50%;
+     }
+     .payment{
+        padding-top: 5%;
+     }
+     .pContainer {
+   
+      width: 80%;
+    }
+  }

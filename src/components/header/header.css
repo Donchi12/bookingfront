@@ -1,0 +1,262 @@
+.header {
+  background-color: #003580;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1240px;
+  margin: 20px 0px 100px 0px;
+}
+
+.headerContainer.listMode {
+  margin: 20px 0px 0px 0px;
+}
+
+.headerList {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.headerListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px;
+  transition: all .2s ease-in-out;
+}
+.headerListItem:hover{
+
+  border-radius: 20px;
+  background-color: #1d4f95
+}
+
+.headerListItem.active {
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: #1d4f95
+}
+.headerTitle{
+  font-size: 50px;
+  margin-top: 4rem;
+}
+
+.headerDesc {
+  margin: 20px 0px 10px 0px;
+  font-size: 25px;
+ 
+}
+
+.headerBtn {
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 17px 17px ;
+  cursor: pointer;
+  font-size: 21px ;
+}
+
+.headerSearch {
+  height: 70px;
+  background-color: white;
+  border: 5px solid #febb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  max-width: 1240px;
+}
+.headerInputContainer{
+  flex: 1;
+}
+.headerInfoContainer{
+  flex: 1.3;
+  display: flex;
+  justify-content: space-between;
+  
+   
+}
+
+.headerInfoContainer .chooseData{
+   flex-basis: 38%;
+  border-right: none;
+  padding-left: 10px;
+
+}
+.headerInfoContainer .chooseBtn{
+  border-right: none;
+}
+
+
+.headerIcon {
+  color: rgb(143, 139, 139);
+  font-size: 25px;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 5px solid #febb02;
+  height: 70px;
+  cursor: pointer;
+}
+
+
+.first-item{
+  border-left: 5px solid #febb02;
+}
+
+
+.headerSearchInput {
+  outline: none;
+  border: none;
+   padding: 15px 0px ;
+   width: 100%;
+  }
+  .inputData{
+    margin: 0 10px ;
+    padding-left: 10px;
+    border: none;
+    
+  }
+
+
+.headerSearchInput::placeholder{
+   font-weight: 500;
+   font-size: 16px;
+   color: rgb(10, 10, 10);
+}
+
+.headerSearchText {
+  
+  cursor: pointer;
+  color: rgb(10, 10, 10);
+}
+
+.date {
+  position: absolute;
+  top: 70px;
+  z-index: 2;
+}
+
+.options {
+  z-index: 2;
+  position: absolute;
+  top: 70px;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  color: #0071c2;
+  cursor: pointer;
+  background-color: white;
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .headerContainer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .headerList {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  
+  .headerListItem {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .headerSearch{
+   position: relative;
+   flex-direction: column;
+   
+   height: auto;
+  }
+   .headerInputContainer{
+    width: 100%;
+    
+  } 
+  .headerSearchItem{
+    align-items: center;
+    padding: 15px 0;
+  }
+  
+  .headerInfoContainer .chooseData{   
+   border-right: 5px solid #febb02;;
+   
+ }
+  
+  .headerInfoContainer{
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .chooseBtn{
+    border: none ;
+  }
+  .chooseData{
+    border-left: none;
+    border-right: none !important;
+  }
+  .date{
+    top: 50%;
+  }
+  .headerSearchText{
+    display: inline-block;
+    width: 100%;
+  }
+  .headerBtn {
+    background-color: #0071c2;
+    width: 100%;
+    padding: 17px ;
+  
+    
+  }
+
+  .options{
+    top: 70%;
+   
+    
+  }
+ 
+}
+
